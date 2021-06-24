@@ -1,0 +1,110 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <h1>Student Registration</h1>
+    <form
+      class="form"
+      onsubmit="return validateForm()"
+      method="POST"
+      action="about.html"
+    >
+      <div class="eachInputDiv">
+        <div class="subTitle">
+          <label>Name: </label>
+        </div>
+        <div>
+          <input type="text" name="username" id="username" class="inputText" />
+        </div>
+      </div>
+
+      <div class="eachInputDiv">
+        <div class="subTitle">
+          <label>Password: </label>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="inputText"
+          />
+        </div>
+      </div>
+
+      <div class="eachInputDiv">
+        <div class="subTitle">
+          <label>Confirm Password: </label>
+        </div>
+        <div>
+          <input
+            type="password"
+            name="passwordConfirm"
+            id="passwordConfirm"
+            class="inputText"
+          />
+        </div>
+      </div>
+
+      <div class="eachInputDiv">
+        <div class="subTitle">
+          <label>City</label>
+        </div>
+        <div>
+          <select name="city" id="city">
+            <option value="none">Select City</option>
+            <option value="Herndon">Herndon</option>
+            <option value="Sterling">Sterling</option>
+            <option value="Ashburn">Ashburn</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="eachInputDiv">
+        <div class="subTitle">
+          <label>Gender</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="gender"
+            id="gender"
+            value="Male"
+            class="inputText"
+            checked
+          />Male
+          <br />
+          <input
+            type="radio"
+            name="gender"
+            id="gender"
+            value="Female"
+            class="inputText"
+          />Female
+        </div>
+      </div>
+
+      <div class="eachInputDiv">
+        <div class="subTitle">
+          <label>G mail</label>
+        </div>
+        <div>
+          <input type="text" name="email" id="email" class="inputText" />
+        </div>
+      </div>
+
+      <div class="titleDiv">
+        <input type="submit" name="submit" value="Submit" class="button" />
+        <input type="reset" name="reset" value="Reset" class="button" />
+      </div>
+
+      <div id="errorSection"></div>
+    </form>
+    <script src="Reg.js"></script>
+  </body>
+</html>

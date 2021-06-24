@@ -1,0 +1,38 @@
+.form {
+  background-color: aqua;
+}
+body {
+  background-color: blue;
+}
+.titleDiv {
+  text-align: center;
+}
+
+.subTitle {
+  width: 190px;
+}
+
+.inputText {
+  color: #000;
+}
+
+.eachInputDiv {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  border-width: 3px;
+}
+
+.form {
+  border: 3px solid black;
+  width: 600px;
+  padding: 20px;
+}
+
+#errorSection {
+  color: red;
+}
